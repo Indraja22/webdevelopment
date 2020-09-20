@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit To Be</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('images/backgroundImage.png');
+        background-size: 100%;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        color: rgb(243, 247, 246);
+        position: absolute;
+        display: inline-block;
+        left: 4px;
+        top: 0px;
+        margin: 40px;
+    }
+
+    .left img {
+        width: 105px;
+        filter: invert();
+
+    }
+
+    .left div {
+        text-align: center;
+        font-family: cursive;
+    }
+
+
+    .right {
+        /* border: 2px solid red; */
+        color: rgb(243, 247, 246);
+        display: inline-block;
+        position: absolute;
+        right: 14px;
+        top: 23px;
+        margin: 40px;
+    }
+
+    .mid {
+        display: block;
+        width: 43%;
+        margin: 40px auto;
+        /* border: 2px solid red; */
+        color: rgb(243, 247, 246);
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        
+    }
+
+    .navbar li a {
+
+        text-decoration: none;
+        padding: 8px 8px;
+        font-size: 20px;
+        font-family: cursive;
+        font-style: italic;
+        color: white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+
+        text-decoration: underline;
+        color: darkred;
+    }
+
+    .logo {
+
+        width: 90px;
+        height: 50px;
+      
+
+    }
+
+    .btn {
+        padding: 8px 8px;
+        margin: 0px 5px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color:white;
+        font-size: 15px;
+        font-family: cursive;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: darkred;
+    }
+
+    .container{
+        border: 2px solid whitesmoke;
+        color: rgb(243, 247, 246);
+        border-radius: 20px;
+        margin: 50px 200px;
+        width: 30%;
+        padding: 40px
+        
+    }
+    .form-group {
+        background-color:black;
+        text-align: center;
+        display: inline-block;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: cursive;
+        padding: 5px;
+        margin: 1px auto;
+        
+    }
+
+    .container h1{
+        text-align: center;
+        font-family: cursive;
+    }
+
+    .container button{
+        display: inline-block;
+        margin: 30px auto;
+        width: 85%;
+        
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+
+            <img src="images/logo1.png" alt="" class="logo">
+            <div>Fit To Be</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn" id="btn1">Contact Us Now</button>
+            <button class="btn" id="btn2">Email Us</button>
+        </div>
+        <div class="container">
+           <h1>Join the Best Gym in Pune!</h1>
+           <form action="noAction.php"></form>
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter Your Name">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter Your Age">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter Your Gender">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter Your Locality">
+           </div>
+           <button class="btn">
+               Submit
+           </button>
+        </div>
+    </header>
+</body>
+
+</html>
